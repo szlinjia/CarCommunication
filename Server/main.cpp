@@ -9,6 +9,7 @@
 #include <arpa/inet.h>
 #include <iostream>
 #include <algorithm>
+#include "discar.h"
 #include "network.h"
 #include "algorithm.h"
 

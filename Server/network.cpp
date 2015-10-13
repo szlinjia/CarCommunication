@@ -1,3 +1,10 @@
+/*
+Class name: NetworkHelper
+Author: Li Lin
+History: 03/2015
+Describe: This class is a helper model to provide network socket service.
+In the project, UDP protocol is used for its efficient transportation.
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
