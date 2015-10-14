@@ -7,7 +7,7 @@ b,Modify the protocol so that multiple cars can be on the bridge as long as they
 Design a graphical user interface to display the movement of the cars, so that the observer can visualize the cars, control their movements, and verify the protocol.<br>
 Solution
 ===
-This program runs in two different platforms. For server part, a logic to act distribute system for Lamport algorithm, is written by C++ and runs in Linux. For client part, the UI to perform car movement, is written by java and runs in Android emulator.<br>
+This program runs in two different platforms. One part is car control logic. They are written by C++ and each car is a independent process. These processes are a group that needs to communicate with each other to enter critical section in order. In this project, the critical section is the narrow bridge. This group is decentriliaze system that no other central server to make a decision to order car processes. So these group members use Lamport Algorithm, a famous therom to solve concurrency problem in distributed system, to determine which one access bridge first which is later. This car control logic is located in server folder and they are Linux OS based. To abserver the whole process, a client grapic is needed to show cars' movement.I used Android Java to receive messages from all cars and draw<br>
 Here is my program video link:<br>
 http://youtu.be/_XIKJeisfIs 
 How to run
